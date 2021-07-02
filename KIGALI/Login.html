@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Feedback</title>
+    <!--External file for the CSS file used for styling the HTML file-->
+    <link rel="stylesheet" href="style.css">
+    	<link rel="icon" type="image/png" sizes="32x32" href="NEW%20LOGO.png">
+</head>
+    
+<body>
+   <img class="logo" style="height: 70px;" src="NEW LOGO.png" alt="" srcset="">
+    <div style="text-align: right; margin: 10px;">
+
+        <a style="margin-right: 30px; text-decoration: none; color: yellow;" href="HOME.html"><b>Home</b></a>
+    <a style="margin-right: 20px; text-decoration: none; color: yellow;" href="About.html" >Explore Kigali</a>
+    </div>
+    
+    <div class="hero">
+        <!--Body for the Login form-->
+        <div class="form-box">
+         <div class="button-box">
+             <div id="btn"></div>
+             <button type="button" class="toggle-btn" onclick="log()">Feed</button>
+             <button type="button" class="toggle-btn" onclick="reg()">Cont</button>
+         </div>
+         <div class="icons">
+            <img src="fb.png" alt="">
+            <img src="twit.png" alt="">
+            <img src="git.png" alt="">
+            <img src="in.png" alt="">
+        </div>
+        <form action="" class="input" id="log">
+            <input type="text" class="field" placeholder="Fullnames" required>
+            <input type="text" class="field" placeholder="Email" required>
+            <input type="text" class="field" placeholder="Phone" required>
+            <input type="text" class="field" placeholder="Region" required>
+            <input type="text" class="field" placeholder="Type Message" required>
+                        <input type="text" class="field" placeholder="Country" required>
+             <button type="submit" class="submit"><a href="Thankyou.html" style="text-decoration: none; color:#ffffff;">Send Feedback</a></button>
+        </form>
+        <form action="" class="input" id="reg">
+            <input type="text" class="field" placeholder="Fullnames" required>
+            <input type="text" class="field" placeholder="Email" required>
+            <input type="text" class="field" placeholder="Phone number" required>
+            <input type="text" class="field" placeholder="Region" required>
+            <input type="text" class="field" placeholder="Country" required>
+            <input type="checkbox" class="check"><span><b style="color: orangered;">Newsletter</b></span>
+            <button type="submit" class="submit"><a href="Thankyou.html">Subscribe To Newsletter</a></button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("log");
+        var y = document.getElementById("reg");
+        var z = document.getElementById("btn");
+
+        function reg(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function log(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(kigali.jpg);
+	align-items: center;
+    justify-content: center;
+}
+
+/*Header for the index page*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 10px 6px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 15px;
+    background: #eff;
+}
+
+.logo{
+    height: 20px;
+    position: relative;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+ header ul li a:hover{
+        color:#000000;
+    }
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: black;
+}
+
+.banner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(55,19,0,0.3),rgba(255,69,0,0.3)),url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid white;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url("KADEALO.jpg");
+    }
+    33%{
+        background-image: url("set.jpg");
+    }
+    67%{
+        background-image: url("buidlings.jpg");
+    }
+    100%{
+        background-image: url("buidlings.jpg");
+    }
+}
+
+.noti h1{
+    font-size: 20px;
+    text-align: center;
+    color: #0000ff;
+    width: 17%;
+    justify-content: center;
+    display: inline-block;
+    margin: 45px;
+    margin-right: 5%;
+    
+}
+.noti h1:hover{
+	color:#ffffff;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.form-box{
+    width: 400px;
+    height: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #261300;
+	padding: 5px;
+    border: yellow solid 2px;
+    border-radius: 3%;
+	overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:grey;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons img{
+    margin: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.input{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid yellow;
+    outline: none;
+    background: transparent;
+}
+
+.submit{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,  #261300,grey);
+    border: 0;
+    outline: none;
+}
+
+.check{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 63px;
+    position: absolute;
+}
+
+#log{
+    left: 50px;
+}
+
+#reg{
+    left: 450px;
+}
+
+.page-wrapper .post-wrapper{
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.page-wrapper .post-wrapper .post{
+    display: inline-block;
+    margin: 10px;
+    box-shadow: -1px 0 10px #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px;
+    border-right: 2px solid yellow;
+    background-color: #fff;
+}
+
+.post img{
+    width: 220px;
+    height: 200px;
+}
+
+ .slider-image{
+    width: 0px;
+    height: 168px;
+   border-radius: 10px;
+    padding: 4px;
+
+}
